@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cherry B.</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+   <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+
+  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Satisfy|Bree+Serif|Candal|PT+Sans">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+  <!--banner-->
+  <section id="banner">
+    <div class="bg-color">
+      <header id="header">
+        <div class="container">
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#about">About Us</a>
+            <a href="#quees">What is a TCBs?</a>
+            <a href="#event">How our algorithm works?</a>
+          </div>
+          <!-- Use any element to open the sidenav -->
+          <span onclick="openNav()" class="pull-right menu-icon">☰</span>
+        </div>
+      </header>
+      <div class="container">
+        <div class="row">
+          <div class="inner text-center">
+            <h1 class="logo-name">Cherry Bombs</h1>
+            <h2>If you can imagine it, you can program it</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / banner -->
+  <!--about-->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center marb-35">
+          <h1 class="header-h">About Us</h1>
+          <p class="header-p">Cherry Bombs CDMX</p>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div class="col-md-6 col-sm-6">
+            <div class="about-info">
+              <h2 class="heading">Cheery Bombs</h2>
+              <p>We developed a machine learning supervised model in order to detect TCBs (transverse cirrus bands), which are irregularly spaced bandlike cirrus clouds that form nearly perpendicular to a jet stream axis, from satelital images. Since TCBs are often found in tropical cyclone outflow regions, our project can help lots of the people that are affected by storms every year by giving more information about cyclones and its path.</p>
+              <br>
+              <p>Our team, Cherry Bombers, is alway searching for true challenges that solve real life problems. With this idea in mind, we chose Automated Detection of Hazards and, after thinking it over we decided to focus on TCB detection. With a lot an effort and passion, we have created a website using HTML, CSS and JavaScript and we also connected it to a Python coded machine learning model that search TCBs from satelital images. Of course we have problems to achieve our goal, but with a good communication, teamwork and enthusiasm we could get over it, and it was very fun!</p>
+              <br>
+              <p>TEAM MEMBERS:</p>
+              <div class="details-list">
+                <ul>
+                  <li><i class="fa fa-check"></i>Mildred Mitzi Hernandez Hernandez</li>
+                  <li><i class="fa fa-check"></i>Carlos Natanael Lecona Valdespino</li>
+                  <li><i class="fa fa-check"></i>Diego Yaosai Pérez Chiu</li>
+                  <li><i class="fa fa-check"></i>Josue Jyaru Hernández Carmona</li>
+                  <li><i class="fa fa-check"></i>Iván Alejandro Camarillo Calderón</li>
+                  <li><i class="fa fa-check"></i>Miguel Lopez Garcia</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <img src="img/res01.jpeg" alt="" class="img-responsive">
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="quees" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1 class="header-h">What is a TCBs?</h1>
+          <p class="header-p">A TCBs or Transverse cirrus banding is defined by the American Meteorological Society Glossary of Meteorology (1999) as: Irregularly spaced bandlike cirrus clouds that form nearly perpendicular to a jet stream axis. They are usually visible in the strongest portions of the subtropical jet and can also be seen in tropical cyclone outflow regions.
+          </p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- / contact -->
+  <section id="event" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center marb-35">
+          <h1 class="header-h">How our algorithm works?</h1>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div class="col-md-6 col-sm-6">
+            <div class="about-info">
+              <h2 class="heading">Our Code</h2>
+              <p>https://github.com/CarlosLecval/Model-for-TCB-classification</p>
+              <h2 class="heading">Preprocessing of data</h2>
+              <p>We take the image, reduce the noise of the image by applying a Gaussian blur also resize it to be 100x100px, we turn it to black and white and segment to separate the clouds from the background </p>
+              <p>Black and White Image</p>
+              <img src="img/res03.jpg" alt="" class="img-responsive">
+              <h2 class="heading">Neural Network</h2>
+              <p>We use a four-layer neural network we have an input layer and another output layer, in addition to two other hidden layers, our first layer has 2 ^ 11 neurons, the second one 2 ^ 10, the third one 2 ^ 9 and the last one only one neuron , for all the layers the activation function is the relu one except for the last one that its function is sigmoid</p>
+              <p>Segmentation Image</p>
+              <img src="img/res05.jpg" alt="" class="img-responsive">
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>Original Image</p>
+            <img src="img/res02.jpg" alt="" class="img-responsive">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>Gaussian Blur</p>
+            <img src="img/res04.jpg" alt="" class="img-responsive">
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- footer -->
+  <footer class="footer text-center">
+    <div class="footer-top">
+      <div class="row">
+        <div class="col-md-offset-3 col-md-6 text-center">
+          <div class="widget">
+            <h4 class="widget-title">Designed by Cherry Bombs</h4>
+            <div class="social-list">
+              <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </div>
+            <p class="copyright clear-float">
+              @jyaru_hernandez / @takis._fueg0 / @carlos_lecona0 
+              
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- / footer -->
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.mixitup.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="contactform/contactform.js"></script>
+
+</body>
+
+</html>
